@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haris Khan | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0f172a, #1e3a8a);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #1f2937;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .chart {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .download-cv {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      background: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Haris Khan</h1>
+    <p>Data Analyst | Excel | Python | Power BI | HTML, CSS, JavaScript</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I’m Haris Khan, a passionate Data Analyst currently studying Software Engineering at FUUAST (3rd Year). With hands-on experience in Excel, Python, Power BI, and web technologies, I aim to turn data into meaningful business insights. My vision is to grow into a Data Scientist by building strong foundations in analytics and engineering.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Regulatory Assistant</strong> – Asian Continental Pharmaceutical Company (Oct 2023 - Present)</p>
+      <ul>
+        <li>Managed document handling, scanning, and data entry</li>
+        <li>Supported Excel-based reporting for internal audits</li>
+        <li>Assisted with organizing regulatory files and digital records</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li><strong>Excel:</strong> PivotTables, VLOOKUP, conditional formatting, dashboards</li>
+        <li><strong>Python:</strong> Pandas, NumPy, Matplotlib</li>
+        <li><strong>Visualization:</strong> Power BI, Tableau</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript (basic interactivity)</li>
+        <li><strong>Soft Skills:</strong> Communication, Problem-solving, Collaboration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Learning Roadmap (Future Skills)</h2>
+      <ul>
+        <li>SQL and database querying</li>
+        <li>Advanced Python (OOP, APIs)</li>
+        <li>Machine Learning & Data Science (Scikit-learn, TensorFlow)</li>
+        <li>Cloud tools: AWS, Google Cloud for Data Pipelines</li>
+        <li>JavaScript charts (Chart.js, D3.js)</li>
+      </ul>
+      <canvas id="skillsChart" class="chart"></canvas>
+    </section>
+
+    <section>
+      <h2>Mini Projects</h2>
+      <div class="project-box">
+        <h3>📊 Excel Sales Dashboard</h3>
+        <p>Created a dynamic sales dashboard using Excel PivotTables, slicers, and conditional formatting to show performance insights for a retail company.</p>
+      </div>
+      <div class="project-box">
+        <h3>🧮 Python Calculator</h3>
+        <p>Developed a basic GUI calculator using Python (Tkinter) to perform standard arithmetic operations.</p>
+      </div>
+      <div class="project-box">
+        <h3>📈 Power BI KPI Dashboard</h3>
+        <p>Visualized KPIs (sales, revenue, targets) across regions using Power BI, enabling business decisions through interactive charts.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Download My CV</h2>
+      <a href="Haris_Khan_CV_Updated_with_Skills_Image.docx" download class="download-cv">📄 Download CV</a>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> hariskhan112it@gmail.com</p>
+      <p><strong>Phone:</strong> 0345-2289512</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hariskhan112" target="_blank">linkedin.com/in/hariskhan112</a></p>
+      <p><strong>GitHub:</strong> <a href="#">github.com/hariskhan112</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Haris Khan | Data Analyst Portfolio
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Excel', 'Python', 'Power BI', 'Tableau', 'HTML/CSS', 'JavaScript'],
+        datasets: [{
+          label: 'Skill Level (Out of 10)',
+          data: [9, 8, 7, 7, 6, 5],
+          backgroundColor: '#2563eb'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 10
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
